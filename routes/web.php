@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/myadmin', function(){
 	return view('admin.index');
 });
+Route::resource('admin/users', 'AdminUsersController');
