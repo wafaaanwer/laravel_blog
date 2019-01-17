@@ -73,13 +73,14 @@
 			<ul class="list-unstyled components">
 				<p>Dummy Heading</p>
 				<li class="active">
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">users</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li>
-							<a href="#">Home 1</a>
+							<a href="{{ route('users.index') }}">View All Users</a>
 						</li>
 						<li>
-							<a href="#">Home 2</a>
+							<a href="{{ route('users.create') }}">Create User</a>
+							
 						</li>
 						<li>
 							<a href="#">Home 3</a>
